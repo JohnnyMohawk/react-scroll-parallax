@@ -17,6 +17,9 @@ import outerRing from './outer-ring.png'
 import mainBg from './main-bg.png'
 import shirtBg from './shirt-bg.png'
 import hatBrim from './hat-brim.png'
+import hatShade from './hat-shade.png'
+import hatRing from './hat-ring.png'
+import hatTop from './hat-top.png'
 
 
 const Intro = () => (
@@ -54,6 +57,15 @@ const Intro = () => (
       </Parallax>
       <Parallax translateY={[32, -32]} scale={[2, 0]} className={style.hatBrim}>
         <img src={hatBrim} alt="glasses" id="glasses" style={{maxWidth: 300}} />
+      </Parallax>
+      <Parallax translateY={[-38, 38]} scale={[-1, 3]} className={style.hatBrim}>
+        <img src={hatShade} alt="glasses" id="glasses" style={{maxWidth: 300}} />
+      </Parallax>
+      <Parallax translateY={[-15, 15]} scale={[2, 0]} className={style.hatBrim}>
+        <img src={hatRing} alt="glasses" id="glasses" style={{maxWidth: 300}} />
+      </Parallax>
+      <Parallax translateY={[350, -350]} scale={[2, 0]} className={style.hatBrim}>
+        <img src={hatTop} alt="glasses" id="glasses" style={{maxWidth: 300}} />
       </Parallax>
       {/* <Svg className={style.hemispheres} svg={hemispheres} /> */}
     </div>
