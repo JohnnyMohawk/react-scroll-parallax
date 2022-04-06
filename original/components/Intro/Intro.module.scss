@@ -51,6 +51,18 @@
   // }
 }
 
+.mainBg {
+  position: absolute;
+  top: 0%;
+  z-index: -0.5;
+}
+
+.innerRing {
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+}
+
 .circleInner {
   position: absolute;
   top: 0;
