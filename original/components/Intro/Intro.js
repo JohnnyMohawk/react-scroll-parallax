@@ -20,6 +20,7 @@ import hatBrim from './hat-brim.png'
 import hatShade from './hat-shade.png'
 import hatRing from './hat-ring.png'
 import hatTop from './hat-top.png'
+// import psych from './psychedelic.mp4'
 
 
 const Intro = () => (
@@ -37,7 +38,7 @@ const Intro = () => (
       <Parallax scaleY={[-1, 3]} translateY={[50, -50]} className={style.glasses}>
         <img src={goatee} alt="glasses" id="glasses" style={{maxWidth: 300}} />
       </Parallax>
-      <Parallax scale={[-1.8, 3.8]} translateY={[140, -140]} className={style.glasses}>
+      <Parallax scale={[-1.8, 3.8]} translateY={[140, -140]} className={style.faceOutline}>
         <img src={faceOutline} alt="glasses" id="glasses" style={{maxWidth: 300}} />
       </Parallax>
       <Parallax scale={[0, 2]} translateY={[220, -220]} className={style.glasses}>
@@ -67,6 +68,11 @@ const Intro = () => (
       <Parallax translateY={[350, -350]} scale={[2, 0]} className={style.hatBrim}>
         <img src={hatTop} alt="glasses" id="glasses" style={{maxWidth: 300}} />
       </Parallax>
+      {/* <Parallax translateY={[0, -100]} scale={[-0.5, -2]} className={style.gradient}> */}
+      <Parallax translateY={[0, -100]} scale={[-0.0025, -3.8]} className={style.gradient}>
+        <div className={style.outerCircle}></div>
+      </Parallax>
+
       {/* <Svg className={style.hemispheres} svg={hemispheres} /> */}
     </div>
     <p className={style.scroll}>¿goingdown?</p>

@@ -22,23 +22,22 @@
   width: 25em;
 }
 
-#faceBg {
-  // position: absolute;
-  // z-index: 2;
-  max-width: 300px;
-
-}
-
 .face {
   position: relative;
-  z-index: 2;
+  z-index: 4;
+}
+
+.faceOutline {
+  position: absolute;
+  top: 0%;
+  z-index: 5;
 }
 
 .glasses,
 .mustache {
   position: absolute;
   top: 0%;
-  z-index: 3;
+  z-index: 6;
 
   // .parallaxInner {
   //   position: absolute;
@@ -54,12 +53,24 @@
 .mainBg {
   position: absolute;
   top: 0%;
-  z-index: -0.5;
+  // z-index: -0.5;
+  z-index: 2;
 }
 
 .innerRing {
   position: absolute;
   top: 0%;
+  z-index: 3;
+}
+
+.hatBrim {
+  position: absolute;
+  top: 0%;
+  z-index: 5;
+}
+
+.gradient {
+  // margin-top: -1.5px;
   z-index: 1;
 }
 
@@ -73,15 +84,23 @@
   border-radius: 50%;
 }
 
-.hatBrim {
+.outerCircle {
   position: absolute;
-  top: 0%;
-  z-index: 1;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 50%;
+  animation: rotate 15s linear infinite;
+  // z-index: -1;
+  top: 2px;
+  // z-index: -0.1;
 }
 
-.hemispheres {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
