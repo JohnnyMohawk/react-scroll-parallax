@@ -2,7 +2,7 @@ import React from "react";
 import * as style from "./IntroCopy.module.scss";
 import { Parallax } from "react-scroll-parallax";
 
-const copy = "Parallax".split("");
+const copy = "¿ISANYOFITREAL?".split("");
 
 const IntroCopy = () => (
   <div className={style.root}>
@@ -11,7 +11,7 @@ const IntroCopy = () => (
       {copy.map((letter, i) => (
         <Parallax
           key={`copy-${i}`}
-          translateX={[0, 100 * (i - 3)]}
+          translateX={[0, 50 * (i - 3)]}
           className={style.letter}
         >
           {letter}
