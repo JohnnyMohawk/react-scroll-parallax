@@ -73,6 +73,12 @@
   border-radius: 50%;
 }
 
+.hatBrim {
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+}
+
 .hemispheres {
   position: absolute;
   top: 25%;
