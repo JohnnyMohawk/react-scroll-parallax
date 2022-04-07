@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Parallax } from "react-scroll-parallax";
+import Lottie from 'react-lottie-player'
+
+
 import { Svg } from "../";
 
 import * as style from "./ShapeField.module.scss";
@@ -20,6 +23,14 @@ import cluster04Triangle from "bundle-text:./cluster-04-triangle.svg";
 import cluster04Square from "bundle-text:./cluster-04-square.svg";
 import cluster04HemiRight from "bundle-text:./cluster-04-hemi-right.svg";
 
+import question from './images/question.png'
+import pregrunta from './images/¿.png'
+import earth from './images/magenta-earth.json'
+
+import faceBg from './images/face-bg.png'
+import glasses from './images/glasses.png'
+import mustacheMag from './images/mustache-mag.png'
+
 export default class ShapeField extends Component {
   render() {
     return (
@@ -30,21 +41,28 @@ export default class ShapeField extends Component {
             className={style.hemiLeft}
             slowerScrollRate
           >
-            <Svg svg={cluster01HemiLeft} />
+            <img src={question} alt="question" style={{maxWidth: 300}} />
           </Parallax>
-          <Svg svg={cluster01Rect} />
+          <div className={style.earth}>
+            <Lottie
+              loop
+              animationData={earth}
+              play
+              style={{ width: 300, height: 300 }}
+            />
+          </div>
           <Parallax translateY={[-100, 100]} className={style.hemiRight}>
-            <Svg svg={cluster01HemiRight} />
+            <img src={pregrunta} alt="pregrunta" style={{maxWidth: 300}} />
           </Parallax>
         </div>
 
         <div className={style.shapeCluster02}>
-          <Svg svg={cluster02Hemi} className={style.hemi} />
-          <Parallax translateY={[-30, 30]} className={style.triangleBig}>
-            <Svg svg={cluster02TriangleBig} />
+          <img src={faceBg} alt="face" style={{width: 150, marginLeft: 60}} />
+          <Parallax translateY={[-380, 30]} className={style.triangleBig}>
+            <img src={glasses} alt="glasses" style={{width: 150, marginLeft: 64}} />
           </Parallax>
-          <Parallax translateY={[30, -30]} className={style.triangleSmall}>
-            <Svg svg={cluster02TriangleSmall} />
+          <Parallax translateY={[4000, -500]} style={{width: 150, marginLeft: 60}} className={style.triangleSmall}>
+            <img src={mustacheMag} alt="magenta mustache" style={{width: 110, marginLeft: 17}} />
           </Parallax>
         </div>
 

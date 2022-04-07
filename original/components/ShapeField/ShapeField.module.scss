@@ -14,16 +14,20 @@
 
   .hemiLeft {
     position: absolute;
-    right: 0;
+    right: -20;
     top: 0;
     width: 50%;
   }
 
   .hemiRight {
     position: absolute;
-    left: 0;
+    left: -110;
     bottom: 0;
     width: 50%;
+  }
+
+  .earth {
+    margin-left: -100px;
   }
 }
 
