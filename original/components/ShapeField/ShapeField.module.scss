@@ -22,7 +22,7 @@
   .hemiRight {
     position: absolute;
     left: -110;
-    bottom: 0;
+    bottom: 10;
     width: 50%;
   }
 
@@ -72,6 +72,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 2;
   }
   .triangleBottom {
     position: absolute;
@@ -84,6 +85,7 @@
     left: 0;
     bottom: 0;
     width: 80%;
+    z-index: 1;
   }
 }
 
