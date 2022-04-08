@@ -45,7 +45,7 @@ export default class ShapeField extends Component {
       <div className={style.root}>
         <div className={style.shapeCluster01}>
           <Parallax
-            translateY={[2820, -100]}
+            translateY={[2920, -100]}
             className={style.hemiLeft}
             slowerScrollRate
           >

@@ -16,7 +16,7 @@ const Marquee = () => (
         translateY={[-70, 70]}
         translateX={[30, -30]}
       >
-        <span className="h1">¿DOESITMATTER?</span>
+        <span className="h1">¿WHATAREYOULEFTWITH?</span>
       </Parallax>
       <Parallax className={style.boxOutline} translateY={[-35, 35]}>
         <Svg svg={boxOutline} />
