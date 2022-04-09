@@ -27,7 +27,11 @@
 
 .headline {
   font-size: 2em;
-  color: $purple;
+  color: black;
+}
+
+h3 {
+  margin-left: 15px;
 }
 
 .copy {
@@ -48,4 +52,15 @@
   top: 0;
   left: 0;
   right: 0;
+}
+
+.barTop {
+  margin-left: -0.8em;
+  margin-top: -15px;
+  margin-bottom: -20px;
+  width: 35em;
+  height: 1.5em;
+  border-top: 0.45em solid #ff00ff;
+  border-bottom: 0.45em solid #ff00ff;
+  transform: skew(-45deg);
 }

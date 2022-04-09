@@ -19,15 +19,16 @@ const TriangleGrid = () => (
       <br></br>
       <br></br>
       <h1 className={style.headline}>John Nelson-Alden</h1>
+      <div className={style.barTop} />
       <h3 className={style.headline}>self-portrait in code, 2022</h3>
       <p>
         HTML, CSS, React, React Scroll Parallax, Procreate.
       </p>
       <p>
-        I am an artist and software engineer from in Chicago, Illinois, USA. My art looks at dark or heavy subjects with bright colors and a light heart.
+        I am an artist and software engineer from Chicago, Illinois, USA. My art looks at dark or heavy subjects with bright colors and a light heart.
       </p>
       <p>
-        This piece is an exploration of using front-end developer tools as an artistic medium. It is also an exercise in shameless self-promotion. To see more of my work, click the button below. 
+        This piece is an exploration of front-end developer tools as visual art media. It is also an exercise in shameless self-promotion. To see more of my work, click the button below. 
       </p>
       {/* <p>
         React hooks and components to create parallax scroll effects for
