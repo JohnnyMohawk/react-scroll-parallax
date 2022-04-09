@@ -17,8 +17,15 @@
 .divider {
   display: block;
   width: 100%;
-  margin-top: 25vh;
+  margin-top: 24.2vh;
   margin-bottom: 25vh;
+}
+
+.dividerParallax {
+  // display: block;
+  width: 100%;
+  // margin-top: 25vh;
+  margin-bottom: -75vh;
 }
 
 .container {
@@ -41,8 +48,46 @@
 
 .text {
   position: absolute;
-  top: 28%;
+  top: 38%;
   left: 0;
   width: 100%;
   text-align: center;
+  margin-left: -15em;
+  z-index: 2;
+}
+
+.gradient {
+  // margin-top: -1.5px;
+  z-index: 1;
+}
+
+.circleInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid $plum;
+  border-radius: 50%;
+}
+
+.outerCircle {
+  position: absolute;
+  height: 168px;
+  width: 168px;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 50%;
+  animation: rotate 15s linear infinite;
+  // z-index: -1;
+  top: 2px;
+  // z-index: -0.1;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
