@@ -2,10 +2,7 @@ import React from "react";
 import * as style from "./TriangleGrid.module.scss";
 import { Svg } from "..";
 import { Parallax } from "react-scroll-parallax";
-import gridPurple from "bundle-text:./grid-purple.svg";
-import gridWhite from "bundle-text:./grid-white.svg";
 import angleTop from "bundle-text:../shared/angle-dark-top.svg";
-
 import saveGood from './images/save-good.png'
 import saveGoodFlip from './images/save-good-flip.png'
 
@@ -30,40 +27,17 @@ const TriangleGrid = () => (
       <p>
         This piece is an exploration of front-end developer tools as visual art media. It is also an exercise in shameless self-promotion. To see more of my work, click the button below. 
       </p>
-      {/* <p>
-        React hooks and components to create parallax scroll effects for
-        banners, images or any other DOM elements.
-      </p>
       <p>
-        Utilizes{" "}
-        <a href="https://parallax-controller.damnthat.tv/">
-          Parallax Controller
-        </a>{" "}
-        to add vertical or horizontal scrolling based effects to elements.{" "}
-      </p>
-      <p>
-        <a href="https://parallax-controller.damnthat.tv/docs/performance">
-          Optimized
-        </a>{" "}
-        to reduce jank on scroll and works with SSR and SSG rendered React apps.
-      </p>
-      <p>
-        <code>yarn add react-scroll-parallax</code>
-        <code>npm i react-scroll-parallax</code>
-      </p> */}
-      <p>
-        <a className="btn" href="https://www.johnnelsonalden.com/">
+        <a className="btn" href="https://www.johnnelsonalden.com/" target="_blank" rel="noopenner noreferrer">
           Portfolio
         </a>
       </p>
     </article>
     <div className={style.container}>
       <Parallax translateY={[-25, 25]}>
-        {/* <Svg svg={gridPurple} className={style.trianglesPurple} /> */}
         <img src={saveGoodFlip} alt="faceBg" id="faceBg" style={{width: 275, marginTop: 0, marginBottom: 0, marginLeft: 0, opacity: 0.7}} />
       </Parallax>
       <Parallax translateX={[-13, 13]} translateY={[-130, 50]}>
-        {/* <Svg svg={gridWhite} /> */}
         <img src={saveGood} alt="faceBg" id="faceBg" style={{width: 275, marginTop: -1700, marginBottom: 0, marginLeft: 20, opacity: 0.7}} />
       </Parallax>
     </div>
